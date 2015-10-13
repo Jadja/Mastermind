@@ -366,6 +366,8 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGap(0, 50, Short.MAX_VALUE)
         );
 
+        panel21.setPreferredSize(new java.awt.Dimension(100, 50));
+
         javax.swing.GroupLayout panel21Layout = new javax.swing.GroupLayout(panel21);
         panel21.setLayout(panel21Layout);
         panel21Layout.setHorizontalGroup(
@@ -374,8 +376,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel21Layout.setVerticalGroup(
             panel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel22.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel22Layout = new javax.swing.GroupLayout(panel22);
         panel22.setLayout(panel22Layout);
@@ -385,8 +389,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel22Layout.setVerticalGroup(
             panel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel23.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel23Layout = new javax.swing.GroupLayout(panel23);
         panel23.setLayout(panel23Layout);
@@ -396,8 +402,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel23Layout.setVerticalGroup(
             panel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel24.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel24Layout = new javax.swing.GroupLayout(panel24);
         panel24.setLayout(panel24Layout);
@@ -407,8 +415,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel24Layout.setVerticalGroup(
             panel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel25.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel25Layout = new javax.swing.GroupLayout(panel25);
         panel25.setLayout(panel25Layout);
@@ -418,8 +428,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel25Layout.setVerticalGroup(
             panel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel26.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel26Layout = new javax.swing.GroupLayout(panel26);
         panel26.setLayout(panel26Layout);
@@ -429,8 +441,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel26Layout.setVerticalGroup(
             panel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel27.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel27Layout = new javax.swing.GroupLayout(panel27);
         panel27.setLayout(panel27Layout);
@@ -440,8 +454,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel27Layout.setVerticalGroup(
             panel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel28.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel28Layout = new javax.swing.GroupLayout(panel28);
         panel28.setLayout(panel28Layout);
@@ -451,8 +467,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel28Layout.setVerticalGroup(
             panel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
+
+        panel29.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel29Layout = new javax.swing.GroupLayout(panel29);
         panel29.setLayout(panel29Layout);
@@ -462,8 +480,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel29Layout.setVerticalGroup(
             panel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        panel30.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel30Layout = new javax.swing.GroupLayout(panel30);
         panel30.setLayout(panel30Layout);
@@ -473,8 +493,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel30Layout.setVerticalGroup(
             panel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        panel31.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel31Layout = new javax.swing.GroupLayout(panel31);
         panel31.setLayout(panel31Layout);
@@ -484,8 +506,10 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel31Layout.setVerticalGroup(
             panel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        panel32.setPreferredSize(new java.awt.Dimension(100, 50));
 
         javax.swing.GroupLayout panel32Layout = new javax.swing.GroupLayout(panel32);
         panel32.setLayout(panel32Layout);
@@ -495,7 +519,7 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel32Layout.setVerticalGroup(
             panel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         NextTurnButton.setText("NEXT TURN");
