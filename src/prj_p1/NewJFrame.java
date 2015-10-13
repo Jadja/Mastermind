@@ -11,9 +11,14 @@ package prj_p1;
  */
 public class NewJFrame extends javax.swing.JFrame {
 
+    
+    
+    public int turn = 1;
+    
     /**
      * Creates new form NewJFrame
      */
+    
     public NewJFrame() {
         initComponents();
     }
@@ -1002,12 +1007,32 @@ public class NewJFrame extends javax.swing.JFrame {
 
         right.setToolTipText("");
         right.setPreferredSize(new java.awt.Dimension(75, 25));
+        right.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rightActionPerformed(evt);
+            }
+        });
 
         rightmid.setPreferredSize(new java.awt.Dimension(75, 25));
+        rightmid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rightmidActionPerformed(evt);
+            }
+        });
 
         leftmid.setPreferredSize(new java.awt.Dimension(75, 25));
+        leftmid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                leftmidActionPerformed(evt);
+            }
+        });
 
         left.setPreferredSize(new java.awt.Dimension(75, 25));
+        left.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                leftActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1310,8 +1335,25 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void NextTurnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextTurnButtonActionPerformed
-        // TODO add your handling code here:
+        turn++;
+        check();
     }//GEN-LAST:event_NextTurnButtonActionPerformed
+
+    private void leftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_leftActionPerformed
+
+    private void leftmidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftmidActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_leftmidActionPerformed
+
+    private void rightmidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightmidActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rightmidActionPerformed
+
+    private void rightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rightActionPerformed
 
     /**
      * @param args the command line arguments

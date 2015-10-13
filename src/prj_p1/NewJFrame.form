@@ -1796,6 +1796,9 @@
           <Dimension value="[75, 25]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rightActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="rightmid">
       <Properties>
@@ -1803,6 +1806,9 @@
           <Dimension value="[75, 25]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rightmidActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="leftmid">
       <Properties>
@@ -1810,6 +1816,9 @@
           <Dimension value="[75, 25]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="leftmidActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="left">
       <Properties>
@@ -1817,6 +1826,9 @@
           <Dimension value="[75, 25]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="leftActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
