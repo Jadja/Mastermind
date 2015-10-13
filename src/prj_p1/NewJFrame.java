@@ -5,6 +5,7 @@
  */
 package prj_p1;
 
+import java.awt.Color;
 import java.util.Random;
 
 /**
@@ -12,6 +13,14 @@ import java.util.Random;
  * @author Jadja
  */
 public class NewJFrame extends javax.swing.JFrame {
+    
+    public  int intFinal1;
+    public  int intFinal2;
+    public  int intFinal3;
+    public  int intFinal4;
+    
+    
+//    1 = rood, 2 = blauw, 3 = groen, 4 = geel
     
     public int turn = 1;
     
@@ -23,11 +32,27 @@ public class NewJFrame extends javax.swing.JFrame {
         initComponents();
     }
     
-        public static void generateCode(){
-        Random random = new Random(0 - 5);
+        public  void generateCode(){
+        Random random = new Random(0 - 4);
         
         
-        random.nextInt();
+        intFinal1 = random.nextInt();
+        intFinal2 = random.nextInt();
+        intFinal3 = random.nextInt();
+        intFinal4 = random.nextInt();
+        
+        if(intFinal1 == 0){
+            final1.setBackground(Color.red);
+        }else if(intFinal1 == 1){
+            final1.setBackground(Color.blue);
+        }else if(intFinal1 == 2){
+            final1.setBackground(Color.green);
+        }else if(intFinal1 == 3){
+            final1.setBackground(Color.yellow);
+        }
+
+        
+        
     }
     
 
@@ -1343,7 +1368,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void NextTurnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextTurnButtonActionPerformed
         turn++;
-        check();
+//        check();
     }//GEN-LAST:event_NextTurnButtonActionPerformed
 
     private void leftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftActionPerformed
