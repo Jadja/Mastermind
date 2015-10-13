@@ -6,7 +6,6 @@
 package prj_p1;
 
 import javax.swing.JFrame;
-import java.util.Random;
 
 /**
  *
@@ -24,11 +23,6 @@ public class PRJ_P1 {
     }
     
     
-    public static void generateCode(){
-        Random random = new Random(0 - 5);
-        
-        
-        random.nextInt();
-    }
+
     
 }
