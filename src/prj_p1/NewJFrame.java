@@ -5,15 +5,11 @@
  */
 package prj_p1;
 
-<<<<<<< HEAD
+
 import java.awt.Color;
-=======
-<<<<<<< HEAD
 import java.awt.Color;
-=======
->>>>>>> origin/master
 import java.util.Random;
->>>>>>> origin/master
+
 
 /**
  *
@@ -1379,10 +1375,6 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void NextTurnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextTurnButtonActionPerformed
-<<<<<<< HEAD
-        turn++;
-//        check();
-=======
         boolean allcolors = true;
         if (box1 == 0) {
             left.setText("Press");
@@ -1403,7 +1395,6 @@ public class NewJFrame extends javax.swing.JFrame {
             rightmid.setText(" ");
             right.setText(" ");
         }
->>>>>>> origin/master
     }//GEN-LAST:event_NextTurnButtonActionPerformed
 
     private void leftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftActionPerformed
