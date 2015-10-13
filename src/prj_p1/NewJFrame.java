@@ -5,15 +5,17 @@
  */
 package prj_p1;
 
+<<<<<<< HEAD
 import java.awt.Color;
+=======
+import java.util.Random;
+>>>>>>> origin/master
 
 /**
  *
  * @author Jadja
  */
 public class NewJFrame extends javax.swing.JFrame {
-
-    
     
     public int turn = 1;
     
@@ -29,6 +31,14 @@ public class NewJFrame extends javax.swing.JFrame {
     public NewJFrame() {
         initComponents();
     }
+    
+        public static void generateCode(){
+        Random random = new Random(0 - 5);
+        
+        
+        random.nextInt();
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -338,7 +348,7 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         panel17Layout.setVerticalGroup(
             panel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout panel18Layout = new javax.swing.GroupLayout(panel18);
@@ -1330,9 +1340,8 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(final4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(right, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rightmid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rightmid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(right, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(leftmid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(left, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1537,10 +1546,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private java.awt.Panel panel32;
     private java.awt.Panel panel33;
     private java.awt.Panel panel34;
-    private java.awt.Panel panel35;
-    private java.awt.Panel panel36;
-    private java.awt.Panel panel37;
-    private java.awt.Panel panel38;
     private java.awt.Panel panel39;
     private java.awt.Panel panel4;
     private java.awt.Panel panel40;
