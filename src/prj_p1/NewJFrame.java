@@ -5,6 +5,8 @@
  */
 package prj_p1;
 
+import java.awt.Color;
+
 /**
  *
  * @author Jadja
@@ -14,6 +16,11 @@ public class NewJFrame extends javax.swing.JFrame {
     
     
     public int turn = 1;
+    
+    public int box1 = 0;
+    public int box2 = 0;
+    public int box3 = 0;
+    public int box4 = 0;
     
     /**
      * Creates new form NewJFrame
@@ -1040,10 +1047,6 @@ public class NewJFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(254, 254, 254)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1051,15 +1054,19 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addComponent(left, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(panel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(panel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(panel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(panel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(panel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(panel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(panel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(23, 23, 23)))
+                                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(panel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(23, 23, 23))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1335,24 +1342,128 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void NextTurnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextTurnButtonActionPerformed
-        turn++;
-        check();
+        boolean allcolors = true;
+        if (box1 == 0) {
+            left.setText("Press");
+            allcolors = false;
+        }if (box2 == 0) {
+            leftmid.setText("Press");
+            allcolors = false;
+        }if (box3 == 0) {
+            rightmid.setText("Press");
+            allcolors = false;
+        }if (box4 == 0) {
+            right.setText("Press");
+            allcolors = false;
+        }if (allcolors)  {
+            turn++;
+            left.setText(" ");
+            leftmid.setText(" ");
+            rightmid.setText(" ");
+            right.setText(" ");
+        }
     }//GEN-LAST:event_NextTurnButtonActionPerformed
 
     private void leftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftActionPerformed
-        // TODO add your handling code here:
+        if (turn == 1)  {
+        if (box1 < 4)   {  
+        box1++;
+        } else  {
+            box1 = 1;
+        }
+        if (box1 == 1) {
+            panel29.setBackground(Color.red);
+        } else if (box1 == 2)   {
+            panel29.setBackground(Color.blue);
+        }
+         else if (box1 == 3)   {
+            panel29.setBackground(Color.green);
+        }
+         else if (box1 == 4)   {
+            panel29.setBackground(Color.yellow);
+        }
+    }   else if (turn == 2)  {
+        if (box1 < 4)   {  
+        box1++;
+        } else  {
+            box1 = 1;
+        }
+        if (box1 == 1) {
+            panel25.setBackground(Color.red);
+        } else if (box1 == 2)   {
+            panel25.setBackground(Color.blue);
+        }
+         else if (box1 == 3)   {
+            panel25.setBackground(Color.green);
+        }
+         else if (box1 == 4)   {
+            panel25.setBackground(Color.yellow);
+        }
+         
+    }
     }//GEN-LAST:event_leftActionPerformed
 
     private void leftmidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftmidActionPerformed
-        // TODO add your handling code here:
+        if (turn == 1)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel30.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel30.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel30.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel30.setBackground(Color.yellow);
+        }
+    }
     }//GEN-LAST:event_leftmidActionPerformed
 
     private void rightmidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightmidActionPerformed
-        // TODO add your handling code here:
+        if (turn == 1)  {
+        if (box3 < 4)   {  
+        box3++;
+        } else  {
+            box3 = 1;
+        }
+        if (box3 == 1) {
+            panel31.setBackground(Color.red);
+        } else if (box3 == 2)   {
+            panel31.setBackground(Color.blue);
+        }
+         else if (box3 == 3)   {
+            panel31.setBackground(Color.green);
+        }
+         else if (box3 == 4)   {
+            panel31.setBackground(Color.yellow);
+        }
+    }
     }//GEN-LAST:event_rightmidActionPerformed
 
     private void rightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightActionPerformed
-        // TODO add your handling code here:
+        if (turn == 1)  {
+        if (box4 < 4)   {  
+        box4++;
+        } else  {
+            box4 = 1;
+        }
+        if (box4 == 1) {
+            panel32.setBackground(Color.red);
+        } else if (box4 == 2)   {
+            panel32.setBackground(Color.blue);
+        }
+         else if (box4 == 3)   {
+            panel32.setBackground(Color.green);
+        }
+         else if (box4 == 4)   {
+            panel32.setBackground(Color.yellow);
+        }
+    }
     }//GEN-LAST:event_rightActionPerformed
 
     /**
