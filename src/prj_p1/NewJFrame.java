@@ -1583,6 +1583,108 @@ public class NewJFrame extends javax.swing.JFrame {
          else if (box2 == 4)   {
             panel26.setBackground(Color.yellow);
         }
+    }   else if (turn == 3)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel22.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel22.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel22.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel22.setBackground(Color.yellow);
+        }
+    }   else if (turn == 4)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel18.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel18.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel18.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel18.setBackground(Color.yellow);
+        }
+    }   else if (turn == 5)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel14.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel14.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel14.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel14.setBackground(Color.yellow);
+        }
+    }   else if (turn == 6)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel10.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel10.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel10.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel10.setBackground(Color.yellow);
+        }
+    }   else if (turn == 7)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel6.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel6.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel6.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel6.setBackground(Color.yellow);
+        }
+    }   else if (turn == 8)  {
+        if (box2 < 4)   {  
+        box2++;
+        } else  {
+            box2 = 1;
+        }
+        if (box2 == 1) {
+            panel2.setBackground(Color.red);
+        } else if (box2 == 2)   {
+            panel2.setBackground(Color.blue);
+        }
+         else if (box2 == 3)   {
+            panel2.setBackground(Color.green);
+        }
+         else if (box2 == 4)   {
+            panel2.setBackground(Color.yellow);
+        }
     }
     }//GEN-LAST:event_leftmidActionPerformed
 
