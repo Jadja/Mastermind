@@ -18,7 +18,7 @@ public class PRJ_P1 {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        JFrame frame = new NewJFrame();
+        JFrame frame = new MasterWindow();
         frame.setVisible(true);
     }
     
