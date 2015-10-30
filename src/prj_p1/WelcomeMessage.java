@@ -37,7 +37,7 @@ public class WelcomeMessage extends javax.swing.JFrame {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Welkom bij Mastermind!\nBij dit spel is het de bedoeling dat je de code raadt.\n\nRaadt door op de \"change colour\" knoppen te klikken.\nKlik daarna op \"Next turn\".\n\nAl het antwoord klopt, wordt je gefeliciteerd door het spel.\n\nAls het niet klopt, krijg je hints aan de zijkant.\nZwart is een goede kleur op de goede plek.\nGrijs is een goede kleur op de verkeerde plek.\n\nJe hebt acht pogingen.\n\nGame on!");
+        jTextArea1.setText("Welkom bij Mastermind!\nBij dit spel is het de bedoeling dat je de code raadt.\n\nRaadt door op de \"change colour\" knoppen te klikken.\nKlik daarna op \"Next turn\".\n\nAl het antwoord klopt, wordt je gefeliciteerd door het spel.\n\nAls het niet klopt, krijg je hints aan de zijkant.\nZwart is een goede kleur op de goede plek.\nGrijs is een goede kleur op de verkeerde plek.\n\nJe hebt acht pogingen.\n\n'Klik op \"Begin\" om te beginnen!");
         jScrollPane1.setViewportView(jTextArea1);
 
         jButton1.setText("Begin");

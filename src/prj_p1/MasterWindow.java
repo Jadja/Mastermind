@@ -5228,6 +5228,7 @@ public class MasterWindow extends javax.swing.JFrame {
             if (turn >= 8) {
             finished = true;
             finish();
+            jLabel1.setText("You are a loser ;)");
         }
             turn++;
             

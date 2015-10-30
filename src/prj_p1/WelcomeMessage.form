@@ -59,7 +59,7 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Welkom bij Mastermind!&#xa;Bij dit spel is het de bedoeling dat je de code raadt.&#xa;&#xa;Raadt door op de &quot;change colour&quot; knoppen te klikken.&#xa;Klik daarna op &quot;Next turn&quot;.&#xa;&#xa;Al het antwoord klopt, wordt je gefeliciteerd door het spel.&#xa;&#xa;Als het niet klopt, krijg je hints aan de zijkant.&#xa;Zwart is een goede kleur op de goede plek.&#xa;Grijs is een goede kleur op de verkeerde plek.&#xa;&#xa;Je hebt acht pogingen.&#xa;&#xa;Game on!"/>
+            <Property name="text" type="java.lang.String" value="Welkom bij Mastermind!&#xa;Bij dit spel is het de bedoeling dat je de code raadt.&#xa;&#xa;Raadt door op de &quot;change colour&quot; knoppen te klikken.&#xa;Klik daarna op &quot;Next turn&quot;.&#xa;&#xa;Al het antwoord klopt, wordt je gefeliciteerd door het spel.&#xa;&#xa;Als het niet klopt, krijg je hints aan de zijkant.&#xa;Zwart is een goede kleur op de goede plek.&#xa;Grijs is een goede kleur op de verkeerde plek.&#xa;&#xa;Je hebt acht pogingen.&#xa;&#xa;&apos;Klik op &quot;Begin&quot; om te beginnen!"/>
           </Properties>
         </Component>
       </SubComponents>
