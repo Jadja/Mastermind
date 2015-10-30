@@ -1695,7 +1695,7 @@ public class MasterWindow extends javax.swing.JFrame {
                     }
                     used2 = true;
                 } 
-                if (guess1 == answer3 && !used3) {
+                else if (guess1 == answer3 && !used3) {
                     if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
                         panel65.setBackground(Color.LIGHT_GRAY);
                         panel1 = true;
@@ -1723,7 +1723,7 @@ public class MasterWindow extends javax.swing.JFrame {
                     }
                     used3 = true;
                 }
-                if (guess1 == answer4 && !used4) {
+                else if (guess1 == answer4 && !used4) {
                     if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
                         panel65.setBackground(Color.LIGHT_GRAY);
                         panel1 = true;
