@@ -17,8 +17,7 @@ public class PRJ_P1 {
     // Values
     
     public static void main(String[] args) {
-        JFrame frame = new MasterWindow();
-        frame.setVisible(true);
+        
         
         JFrame rules = new WelcomeMessage();
         rules.setVisible(true);

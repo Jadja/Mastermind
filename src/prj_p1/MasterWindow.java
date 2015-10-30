@@ -123,10 +123,10 @@ public class MasterWindow extends javax.swing.JFrame {
             answer4 = 4;
         }
 
-        answer1 = 1;
-        answer2 = 2;
-        answer3 = 3;
-        answer4 = 4;
+//        answer1 = 1;
+//        answer2 = 2;
+//        answer3 = 3;
+//        answer4 = 4;
         
         
     }
@@ -1501,10 +1501,7 @@ public class MasterWindow extends javax.swing.JFrame {
 
     private void NextTurnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextTurnButtonActionPerformed
 
-        if (turn >= 8) {
-            finished = true;
-            finish();
-        }
+        
         if (turn == 1) {
             hideHints();
             generateCode();
@@ -3844,11 +3841,1396 @@ public class MasterWindow extends javax.swing.JFrame {
                 }
 
             }
+            else if (turn == 6) {
+                if (guess1 == answer1 && guess2 == answer2 && guess3 == answer3 && guess4 == answer4) {
+                    finished = true;
+                }
+                
+                boolean panel1 = false;
+                boolean panel2 = false;
+                boolean panel3 = false;
+                boolean panel4 = false;
+
+                boolean used1 = false;
+                boolean used2 = false;
+                boolean used3 = false;
+                boolean used4 = false;
+
+                if (guess1 == answer1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.black);
+
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                }
+                if (guess2 == answer2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                }
+                
+                if (guess3 == answer3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                }
+                if (guess4 == answer4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                if (guess1 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess1 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                } else if (guess1 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel56.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel57.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel58.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+
+                }
+                if (guess2 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    }
+                    used1 = true;
+                } else if (guess2 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                } else if (guess2 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                 if (guess3 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                } else if (guess3 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess3 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                 if (guess4 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                } else if (guess4 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess4 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel45.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel46.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel47.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel48.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                }
+
+            }
+            else if (turn == 7) {
+                if (guess1 == answer1 && guess2 == answer2 && guess3 == answer3 && guess4 == answer4) {
+                    finished = true;
+                }
+                
+                boolean panel1 = false;
+                boolean panel2 = false;
+                boolean panel3 = false;
+                boolean panel4 = false;
+
+                boolean used1 = false;
+                boolean used2 = false;
+                boolean used3 = false;
+                boolean used4 = false;
+
+                if (guess1 == answer1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.black);
+
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                }
+                if (guess2 == answer2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                }
+                
+                if (guess3 == answer3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                }
+                if (guess4 == answer4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                if (guess1 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess1 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                } else if (guess1 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+
+                }
+                if (guess2 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    }
+                    used1 = true;
+                } else if (guess2 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                } else if (guess2 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                 if (guess3 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                } else if (guess3 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess3 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                 if (guess4 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                } else if (guess4 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess4 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel40.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel41.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel43.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel44.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                }
+
+            }
+            else if (turn == 8) {
+                if (guess1 == answer1 && guess2 == answer2 && guess3 == answer3 && guess4 == answer4) {
+                    finished = true;
+                }
+                
+                boolean panel1 = false;
+                boolean panel2 = false;
+                boolean panel3 = false;
+                boolean panel4 = false;
+
+                boolean used1 = false;
+                boolean used2 = false;
+                boolean used3 = false;
+                boolean used4 = false;
+
+                if (guess1 == answer1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.black);
+
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                }
+                if (guess2 == answer2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                }
+                
+                if (guess3 == answer3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                }
+                if (guess4 == answer4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.black);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.black);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.black);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.black);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                if (guess1 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess1 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                } else if (guess1 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+
+                }
+                if (guess2 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    }
+                    used1 = true;
+                } else if (guess2 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                } else if (guess2 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                 if (guess3 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                } else if (guess3 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess3 == answer4 && !used4) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used4 = true;
+                }
+                 if (guess4 == answer1 && !used1) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used1 = true;
+                } else if (guess4 == answer2 && !used2) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used2 = true;
+                } else if (guess4 == answer3 && !used3) {
+                    if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (Math.random() > 0.25 && Math.random() <= 0.5 && !panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (Math.random() > 0.5 && Math.random() <= 0.75 && !panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (Math.random() > 0.75 && Math.random() <= 1 && !panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    } else if (!panel1) {
+                        panel33.setBackground(Color.LIGHT_GRAY);
+                        panel1 = true;
+                    } else if (!panel2) {
+                        panel34.setBackground(Color.LIGHT_GRAY);
+                        panel2 = true;
+                    } else if (!panel3) {
+                        panel39.setBackground(Color.LIGHT_GRAY);
+                        panel3 = true;
+                    } else if (!panel4) {
+                        panel42.setBackground(Color.LIGHT_GRAY);
+                        panel4 = true;
+                    }
+                    used3 = true;
+                }
+
+            }
             guess1 = 0;
             guess2 = 0;
             guess3 = 0;
             guess4 = 0;
+            if (turn >= 8) {
+            finished = true;
+            finish();
+        }
             turn++;
+            
         }
 
         if (finished && turn < 9) {

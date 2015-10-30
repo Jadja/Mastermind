@@ -5,6 +5,8 @@
  */
 package prj_p1;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Keije Dekker
@@ -73,6 +75,8 @@ public class WelcomeMessage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.dispose();
+        JFrame frame = new MasterWindow();
+        frame.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
