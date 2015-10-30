@@ -17,9 +17,11 @@ public class PRJ_P1 {
     // Values
     
     public static void main(String[] args) {
-        // TODO code application logic here
         JFrame frame = new MasterWindow();
         frame.setVisible(true);
+        
+        JFrame rules = new WelcomeMessage();
+        rules.setVisible(true);
     }
     
     
