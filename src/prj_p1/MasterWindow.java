@@ -5238,8 +5238,6 @@ public class MasterWindow extends javax.swing.JFrame {
                 jLabel1.setText("You are a winner!");
                 finish();
                 turn = 100;
-            } else {
-
             }
         }
     }//GEN-LAST:event_NextTurnButtonActionPerformed
