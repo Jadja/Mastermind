@@ -123,10 +123,10 @@ public class MasterWindow extends javax.swing.JFrame {
             answer4 = 4;
         }
 
-//        answer1 = 1;
-//        answer2 = 2;
-//        answer3 = 3;
-//        answer4 = 4;
+        answer1 = 1;
+        answer2 = 2;
+        answer3 = 2;
+        answer4 = 4;
         
         
     }
@@ -1862,7 +1862,7 @@ public class MasterWindow extends javax.swing.JFrame {
                         panel4 = true;
                     }
                     used1 = true;
-                } else if (guess3 == answer2 && !used2) {
+                } else if (guess3 == answer2 && used2 == false) {
                     if (Math.random() >= 0 && Math.random() <= 0.25 && !panel1) {
                         panel65.setBackground(Color.LIGHT_GRAY);
                         panel1 = true;
